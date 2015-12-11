@@ -46,4 +46,4 @@ public/assets
 .npmrc
 
 # Nightwatch UI Tests
-test/reports
+ui-tests/reports
