@@ -1,5 +1,5 @@
 export default {
-  'Demo Test: Google First' (client) {
+  'Demo Test: Google Second' (client) {
     client.url('http://google.no').pause(1000)
 
     client.expect.element('body').to.be.present.before(1000)
@@ -10,4 +10,5 @@ export default {
 
     client.end()
   }
+
 }

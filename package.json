@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "ui": "./node_modules/.bin/nightwatch"
+    "ui": "node ./ui-tests/runner -c ./ui-tests/config.js"
   },
   "author": "Dane Thurber <dane.thurber@gmail.com> (http://github.com/danethurber)",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^1.2.0",
     "nightwatch": "^0.8.9"
   }
 }
