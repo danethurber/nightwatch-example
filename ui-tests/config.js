@@ -1,10 +1,14 @@
-const launchUrl = "https://app-stage.pluralsight.com/library/"
+const launchUrl = `${process.env.NIGHTWATCH_BASE_URL}/library/`
 
 export default {
-  src_folders : ['ui-tests/specs'],
-  output_folder : 'ui-tests/reports',
+  src_folders: ['ui-tests/specs'],
+  output_folder: 'ui-tests/reports',
 
-  selenium : {
+  globals_path: 'ui-tests/globals',
+  custom_commands_path: 'ui-tests/commands',
+  custom_assertions_path: 'ui-tests/assertions',
+
+  selenium: {
     start_process : true,
     server_path : 'bin/selenium-server-standalone-2.48.2.jar'
   },
@@ -13,17 +17,17 @@ export default {
 
   test_settings : {
     default: {
-      launch_url : launchUrl,
+      launch_url: launchUrl,
       desiredCapabilities: {
-        browserName: "chrome",
+        browserName: 'chrome',
         javascriptEnabled: true
       }
     },
 
     firefox: {
-      launch_url : launchUrl,
+      launch_url: launchUrl,
       desiredCapabilities: {
-        browserName: "firefox",
+        browserName: 'firefox',
         javascriptEnabled: true
       }
     }
