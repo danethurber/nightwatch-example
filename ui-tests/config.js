@@ -5,6 +5,7 @@ export default {
   output_folder: 'ui-tests/reports',
 
   globals_path: 'ui-tests/globals',
+  page_objects_path: 'ui-tests/pages',
   custom_commands_path: 'ui-tests/commands',
   custom_assertions_path: 'ui-tests/assertions',
 
